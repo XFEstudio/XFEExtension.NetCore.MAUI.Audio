@@ -46,13 +46,21 @@ public class AudioPlayer : IDisposable
 #endif
     }
 
-    public void PlayAudioData(byte[] audioData, WriteMode writeMode = WriteMode.NonBlocking)
+    public void PlayAudioData(byte[] audioData)
     {
 #if ANDROID
         if (isPlaying && audioData is not null)
-            audioTrack.Write(audioData, 0, audioData.Length, writeMode);
+            audioTrack.Write(audioData, 0, audioData.Length, WriteMode.NonBlocking);
 #endif
     }
+
+#if ANDROID
+    public void PlayAudioData(byte[] audioData, WriteMode writeMode = WriteMode.NonBlocking)
+    {
+        if (isPlaying && audioData is not null)
+            audioTrack.Write(audioData, 0, audioData.Length, writeMode);
+    }
+#endif
 
     private void Initialize()
     {
