@@ -26,9 +26,14 @@
 		<PackageIcon>logoIcon.png</PackageIcon>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<RepositoryUrl>https://github.com/XFEstudio/XFEExtension.NetCore.MAUI.Audio</RepositoryUrl>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <None Include="..\LICENSE">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
 	  <None Include="..\logoIcon.png">
 	    <Pack>True</Pack>
 	    <PackagePath>\</PackagePath>
