@@ -1,1 +1,1 @@
-# XFE各类拓展.NetCore.MAUI.Audio
+# XFEExtension.NetCore.MAUI.Audio

@@ -3,7 +3,7 @@ using Android.Media;
 using Encoding = Android.Media.Encoding;
 #endif
 
-namespace XFE各类拓展.NetCore.MAUI.Audio;
+namespace XFEExtension.NetCore.MAUI.Audio;
 
 public class AudioRecorder : IDisposable
 {
