@@ -27,6 +27,9 @@
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<RepositoryUrl>https://github.com/XFEstudio/XFEExtension.NetCore.MAUI.Audio</RepositoryUrl>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<Version>2.0.0</Version>
+		<PackageReleaseNotes>正式将XFE各类拓展更名为XFEExtension</PackageReleaseNotes>
+		<PackageTags>XFE;MAUI;Audio</PackageTags>
 	</PropertyGroup>
 
 	<ItemGroup>
